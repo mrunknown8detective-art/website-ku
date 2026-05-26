@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtoZone - Dunia Otomotif Terkini</title>
+    <style>
+        /* Gaya Tampilan (CSS) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        header {
+            background-color: #e50914;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #e50914;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .artikel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: #262626;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h3 {
+            margin-top: 0;
+            color: #e50914;
+        }
+        .card-content p {
+            color: #ccc;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>OtoZone</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Mobil</a>
+        <a href="#">Motor</a>
+        <a href="#">Modifikasi</a>
+    </nav>
+
+    <div class="container">
+        <!-- Banner Utama -->
+        <div class="hero">
+            <h2>Eksplorasi Dunia Kecepatan</h2>
+            <p>Info terupdate mengenai supercar, motor sport, dan tren modifikasi masa kini.</p>
+        </div>
+
+        <!-- Bagian Artikel -->
+        <h2 style="border-left: 5px solid #e50914; padding-left: 10px; margin-top: 40px;">Berita Terbaru</h2>
+        
+        <div class="artikel-grid">
+            <!-- Artikel 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=500" alt="Supercar">
+                <div class="card-content">
+                    <h3>Masa Depan Hypercar Listrik</h3>
+                    <p>Bagaimana teknologi baterai solid-state mengubah industri mobil sport mewah dalam menghasilkan akselerasi 0-100 km/jam di bawah 2 detik.</p>
+                </div>
+            </div>
+
+            <!-- Artikel 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500" alt="Motor Sport">
+                <div class="card-content">
+                    <h3>Tren Cafe Racer 2026</h3>
+                    <p>Modifikasi gaya klasik modern kembali merajai jalanan. Simak pilihan basis motor terbaik untuk diubah menjadi Cafe Racer impianmu.</p>
+                </div>
+            </div>
+
+            <!-- Artikel 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=500" alt="SUV">
+                <div class="card-content">
+                    <h3>SUV Tangguh untuk Overlanding</h3>
+                    <p>Kombinasi kenyamanan harian dan ketangguhan off-road menjadi magnet utama bagi para pecinta petualangan alam bebas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 OtoZone - Dibuat oleh mr manusia dengan Termux Android.</p>
+    </footer>
+
+</body>
+</html>
+>
+
